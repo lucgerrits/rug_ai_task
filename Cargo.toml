@@ -1,0 +1,42 @@
+[package]
+name = "rug_ai_task"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15.0"
+tokio = { version = "1.32", features = ["full"] }
+log = "0.4.14"
+env_logger = "0.9.0"
+num_cpus = "1.0"
+reqwest = "0.11.20"
+regex = "1.10.3"
+rayon = "1.9.0"
+clap = { version = "4.5.3", features = ["derive"] }
+
+
+cpython = "0.5"
+libc = "0.2"
+lazy_static = "1.4.0"
+libloading = "0.5"
+serde = { version = "1.0.104", features = ["derive"] }
+serde_json = "1.0.48"
+
+
+[dev-dependencies]
+
+[build-dependencies]
+
+[features]
+
+[[bin]]
+name = "rug_ai_task"
+path = "src/main.rs"
+
+[[bin]]
+name = "task4"
+path = "src/task4.rs"
+
+[[bin]]
+name = "task5"
+path = "src/task5.rs"
